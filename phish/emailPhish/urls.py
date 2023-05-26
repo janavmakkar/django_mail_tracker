@@ -6,5 +6,5 @@ urlpatterns = [
     # path('send/render_image/',render_image, name='render_image'),
 
     path('send_html/', SendTemplateMailView.as_view(), name='send_template'),
-    path('image_load/<str:emailId>/',image_load, name='image_load'),
+    path('send_html/image_load/<str:emailId>/',image_load, name='image_load'),
 ]
